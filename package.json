@@ -1,0 +1,43 @@
+{
+  "name": "rulls-portfolioweb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "framer-motion": "^12.23.6",
+    "next": "15.4.2",
+    "postcss": "^8.5.6",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.2",
+    "typescript": "^5"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rullyoetamaDev/rulls-portfolioweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rullyoetamaDev/rulls-portfolioweb/issues"
+  },
+  "homepage": "https://github.com/rullyoetamaDev/rulls-portfolioweb#readme"
+}
