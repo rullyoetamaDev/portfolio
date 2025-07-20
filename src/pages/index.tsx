@@ -1,17 +1,17 @@
 "user client"
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Hero from "./hero/Hero";
-import Projects from "./projects/Projects";
-import Contact from "./contact/Contact";
 import MySelf from "./content/MySelf";
 import { EXPERIENCES } from "@/auth/data/dataproject";
 import ExperienceCard from "./content/Experience";
 
 function Home() {
+  const router = useRouter();
   const { push } = useRouter();
   const { query } = useRouter()
+
+  const [isClient, setIsClient] = useState(false);
 
 
   const Login = () => {
@@ -24,18 +24,29 @@ function Home() {
     Login();
   }, []);
 
+  useEffect(() => {
+    setIsClient(true); // ✅ memastikan ini hanya jalan di client
+    if (typeof window !== "undefined") {
+      const user = sessionStorage.getItem("user");
+      if (!user) {
+        router.push("/login");
+      }
+    }
+  }, []);
+
   return (
     <div className="">
       <MySelf />
       <br />
       <br />
       <br />
-      {EXPERIENCES.map((exp, index) => (
-        <ExperienceCard key={index} experience={exp} />
-      ))}
-      {/* <Hero guest={`${query.user}`}/> */}
-      {/* <Projects/>
-      <Contact guest={`${query.user}`}/> */}
+      {EXPERIENCES && EXPERIENCES.length > 0 ? (
+        EXPERIENCES.map((exp) => (
+          <ExperienceCard key={exp.id} experience={exp} />
+        ))
+      ) : (
+        <p className="text-center text-gray-400">No Experience Data</p>
+      )}
     </div>
   );
 }

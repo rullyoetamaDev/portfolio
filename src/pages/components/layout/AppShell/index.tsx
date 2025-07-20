@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import { useRouter } from "next/router";
-import Footer from "../Footer/Footer";
 
 type AppShellProps = {
   children: React.ReactNode;
