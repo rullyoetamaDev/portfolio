@@ -7,7 +7,7 @@ import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
 import MySelf from "./content/MySelf";
 import { EXPERIENCES } from "@/auth/data/dataproject";
-import { ExperienceCard } from "./content/Experience";
+import ExperienceCard from "./content/Experience";
 
 function Home() {
   const { push } = useRouter();
