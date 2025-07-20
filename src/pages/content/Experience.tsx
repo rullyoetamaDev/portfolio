@@ -10,7 +10,7 @@ type Experience = {
     technologies: string[];
 };
 
-export const ExperienceCard = ({ experience }: { experience: Experience }) => {
+const ExperienceCard = ({ experience }: { experience: Experience }) => {
     return (
         <section id="experience">
             <div className="rounded-2xl p-6 mb-6 shadow-lg cursor-pointer hover:bg-gradient-to-b from-slate-800 to-slate-900 transition-colors duration-300 group">
@@ -50,3 +50,5 @@ export const ExperienceCard = ({ experience }: { experience: Experience }) => {
         </section>
     );
 };
+
+export default ExperienceCard;
