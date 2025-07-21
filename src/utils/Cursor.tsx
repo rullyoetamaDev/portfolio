@@ -1,34 +1,3 @@
-// "use client";
-// import { useEffect } from "react";
-
-// export default function  Cursor() {
-//   useEffect(() => {
-//     const cursor = document.createElement("div");
-//     cursor.style.position = "fixed";
-//     cursor.style.width = "20px";
-//     cursor.style.height = "20px";
-//     cursor.style.borderRadius = "50%";
-//     cursor.style.background = "#38bdf8";
-//     cursor.style.boxShadow = "0 0 15px #38bdf8, 0 0 30px #38bdf8";
-//     cursor.style.pointerEvents = "none";
-//     cursor.style.zIndex = "9999";
-//     document.body.appendChild(cursor);
-
-//     const moveCursor = (e: MouseEvent) => {
-//       cursor.style.left = `${e.clientX - 10}px`;
-//       cursor.style.top = `${e.clientY - 10}px`;
-//     };
-
-//     window.addEventListener("mousemove", moveCursor);
-//     return () => {
-//       window.removeEventListener("mousemove", moveCursor);
-//       document.body.removeChild(cursor);
-//     };
-//   }, []);
-
-//   return null;
-// }
-
 "use client";
 
 import { useEffect, useState } from "react";
