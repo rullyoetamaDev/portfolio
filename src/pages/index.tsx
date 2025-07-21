@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import MySelf from "./content/MySelf";
 import { EXPERIENCES } from "@/auth/data/dataproject";
 import ExperienceCard from "./content/Experience";
+import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
 
 function Home() {
   const router = useRouter();
@@ -47,6 +49,12 @@ function Home() {
       ) : (
         <p className="text-center text-gray-400">No Experience Data</p>
       )}
+      <div className="flex items-center gap-2 text-sm text-white font-semibold cursor-pointer hover:text-[#5EEAD4] group">
+        <Link href="/Resume.pdf" download className="flex items-center gap-1">
+          <p>View Full Résumé</p>
+          <GoArrowUpRight size={16} className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:rotate-12" />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -42,12 +42,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
                     ))}
                 </div>
             </div>
-            <div className="flex items-center gap-2 text-sm text-white font-semibold cursor-pointer hover:text-[#5EEAD4] group">
-                <Link href="/files/Resume.pdf" download className="flex items-center gap-1">
-                    <p>View Full Résumé</p>
-                    <GoArrowUpRight size={16} className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:rotate-12" />
-                </Link>
-            </div>
+            
         </section>
     );
 };

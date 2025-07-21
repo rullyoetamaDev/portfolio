@@ -11,12 +11,28 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    id : 1,
+    id: 1,
+    year: "Feb 2023 - Present",
+    role: "Software Engineer",
+    company: "PT Asiatek Solusi Indonesia",
+    description: `As a Software Engineer at Bank Mandiri, I worked as a developer in the Fraud team to build and maintain an application for managing fraud indications related to transactions and the use of loan products.`,
+    technologies: ["React", "Typescript", "Next.js", "Tailwind CSS", "Node.js", "Express", "Sequelize", "PostgreSQL", "Java", "Spring Boot", "SQL", "ORACLE", "RESTful APIs", "Agile Methodologies"],
+  },
+  {
+    id: 2,
+    year: "Mar 2022 - Feb 2023",
+    role: "Full Stack Developer",
+    company: "Praisindo Teknologi",
+    description: `As a Fullstack Developer, I developed and maintained the DPLK Fee Management application for AXA Mandiri using Web Forms on the .NET Framework, handling both front-end UI and back-end integration.`,
+    technologies: [".NET Framework","Microsoft SQL Server","Stored Procedures","SQL Server Reporting Services (SSRS)"],
+  },
+  {
+    id: 3,
     year: "Aug 2021 - Mar 2022",
     role: "Full Stack Developer",
     company: "PT Whiteopen Teknologi",
     description: `I am work as Programmer in one of vendor on Jakarta, while working i use programming languages like C# with ASP .NET framework, Javascript, Jquery, HTML, CSS, Ajax, Power BI. And several office application like Microsoft Excel and Microsoft Word. Sometime i have meeting with my clients, to discuss additional or bugs by user, after that i do system analysis and work on it.`,
-    technologies: ["ASP.NET MVC", "jQuery", "JavaScript", "PostgreSQL","Spring Boot","Microsoft SQL Server","Java","Software Development Life Cycle (SDLC)","Application Programming Interfaces (API)"],
+    technologies: ["ASP.NET MVC", "jQuery", "JavaScript", "PostgreSQL", "Spring Boot", "Microsoft SQL Server", "Java", "Software Development Life Cycle (SDLC)", "Application Programming Interfaces (API)"],
   },
 ];
 
