@@ -19,8 +19,8 @@ const MySelf = () => {
             </p>
 
             <p>
-                In my spare time, I’m usually climbing, reading, hanging out with my wife and my child, or running around
-                searching for <span className="font-semibold text-white">Inspiration Design</span>.
+                In my spare time, I’m usually reading, hanging out with my wife and my child, or running around
+                searching for <span className="font-semibold text-white">Inspiration</span>.
             </p>
         </section>
     );
