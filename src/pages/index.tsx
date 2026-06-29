@@ -36,9 +36,9 @@ function Home() {
     }
   }, []);
 
-  const handleResumeClick = () => {
-    alert("🚧 Under Maintenance");
-  };
+  // const handleResumeClick = () => {
+  //   alert("🚧 Under Maintenance");
+  // };
 
   return (
     <div className="">
@@ -53,14 +53,14 @@ function Home() {
       ) : (
         <p className="text-center text-gray-400">No Experience Data</p>
       )}
-      {/* <div className="flex items-center gap-2 text-sm text-white font-semibold cursor-pointer hover:text-[#5EEAD4] group">
+      <div className="flex items-center gap-2 text-sm text-white font-semibold cursor-pointer hover:text-[#5EEAD4] group">
         <Link href="/Resume.pdf" download className="flex items-center gap-1">
           <p>View Full Résumé</p>
           <GoArrowUpRight size={16} className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:rotate-12" />
         </Link>
-      </div> */}
+      </div>
 
-      <div className="flex items-center gap-2 text-sm text-white font-semibold cursor-pointer hover:text-[#5EEAD4] group">
+      {/* <div className="flex items-center gap-2 text-sm text-white font-semibold cursor-pointer hover:text-[#5EEAD4] group">
         <button
           onClick={handleResumeClick}
           className="flex items-center gap-1"
@@ -71,7 +71,7 @@ function Home() {
             className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:rotate-12"
           />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
